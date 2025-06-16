@@ -30,7 +30,7 @@ const QrCode = ({ formData, setFormData }) => {
         setScannedResult(result?.data);
 
         console.log(`${import.meta.env.BASE_URL}qrCode`);
-        if (result.data === `${import.meta.env.BASE_URL}qrCode`) {
+        if (result.data === "https://jana-elst.github.io/Abby/qrCode") {
             console.log('NextPage');
             setFormData({
                 ...formData,
