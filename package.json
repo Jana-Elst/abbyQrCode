@@ -1,0 +1,46 @@
+{
+  "homepage": "https://jana-elst.github.io/Abby",
+  "name": "basic-notes",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "react-router build && cp ./build/client/index.html ./build/client/404.html",
+    "dev": "react-router dev --host",
+    "dev:test": "react-router dev --port 5174",
+    "test:ui": "playwright test --ui",
+    "test:chrome": "playwright test --project=chromium",
+    "test:all": "playwright test",
+    "start": "vite preview "
+  },
+  "dependencies": {
+    "@fontsource-variable/roboto": "^5.2.5",
+    "@gsap/react": "^2.1.2",
+    "@react-router/node": "^7.6.0",
+    "@react-router/serve": "^7.6.0",
+    "@supabase/auth-ui-react": "^0.4.7",
+    "@supabase/auth-ui-shared": "^0.1.8",
+    "@supabase/supabase-js": "^2.49.8",
+    "gsap": "^3.13.0",
+    "isbot": "^5.1.27",
+    "qr-scanner": "^1.4.2",
+    "react": "^19.1.0",
+    "react-day-picker": "^9.7.0",
+    "react-dom": "^19.1.0",
+    "react-router": "^7.6.0",
+    "react-router-dom": "^7.6.2",
+    "swiper": "^11.2.8"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.26.0",
+    "@playwright/test": "^1.52.0",
+    "@react-router/dev": "^7.6.0",
+    "@vitejs/plugin-react-swc": "^3.9.0",
+    "eslint": "^9.26.0",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.20",
+    "globals": "^16.1.0",
+    "vite": "^6.3.5"
+  }
+}

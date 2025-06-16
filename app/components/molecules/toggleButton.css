@@ -1,0 +1,29 @@
+.toggleButton {
+    display: flex;
+}
+
+.toggleButton__item {
+    text-align: center;
+    border: var(--border);
+    padding: var(--space-xs) var(--space-s);
+    width: 100%;
+}
+
+.toggleButton__item:first-of-type {
+   border-right: none;
+}
+
+.toggleButton__item:nth-of-type(3) {
+    border-left: none;}
+
+.toggleButton__item--orange:has(input:checked~label) {
+    background-color: var(--orange);
+}
+
+.toggleButton__item--purple:has(input:checked~label) {
+    background-color: var(--purple);
+}
+
+/* input {
+    display: none;
+} */
